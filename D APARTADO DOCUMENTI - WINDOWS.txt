@@ -1,0 +1,74 @@
+Un objeto es una instancia única de una clase, una unidad de algo con lo que lo relacionamos, Por un ejemplo, un vehículo: la palabra “vehículo” es una clase, y el vehículo físico es una instancia de esa palabra “vehículo”.
+
+El objeto está dividido en dos partes:
+
+Características o atributos:
+Las características son todo lo que representa al objeto. Por ejemplo, la cantidad de ruedas que tiene un vehículo, la marca del vehículo, el color, el tamaño, el número de placa, etc. A estos elementos se les llama atributos en el mundo de la programación.
+
+Funcionalidades o métodos:
+Son todas las funcionalidades que tiene el objeto o los servicios que ofrece. Por ejemplo, el vehículo nos ofrece el servicio de transportarnos, de escuchar música, de tener aire acondicionado, etc. A esto se le llama método en el mundo de la programación.
+
+Ahora, construyamos el objeto Vehículo en código, con todo lo que nos han enseñado hasta ahora:
+
+//Atributos
+var cantidad_ruedas = 4; //int
+var marca = "Mercedez" //String
+var color = "Rojo"; //String
+var tamano = "Grande"; //String
+var placa = "BDH865"; //String
+var frenos = true; //boolean
+
+//Metodos
+function transporte(){
+alert("Nos transportamos hasta la casa");
+}
+
+//Este es un método que recibe atributos como parámetros 
+//Cuando un método recibe un atributo como parámetro, significa que cada que lo uses debes colocar un atributo entre los paréntesis
+
+function musica(cancion){
+alert("En este momento estamos escuchando la canción: " + cancion);
+}
+
+function aireAcondicionado(prendido){
+alert("El aire acondicionado esta: " + prendido);
+}
+Un boolean es un tipo de variable que solo puede tener 2 estados: True o False (verdadero o falso).
+
+Teniendo todo esto en cuenta, veamos cómo funcionan Window y Document en HTML.
+
+Objetos
+window
+document
+console
+Atributos
+window.location;
+document.anchors;
+console.backgroundColor;
+Métodos
+window.addEventListener();
+document.write(“Este método recibe un parámetro de tipo String”)
+console.count();
+Cuando queremos llamar un atributo o un método de un objeto, lo que debemos hacer es:
+
+Llamar al objeto al cual quieres acceder a su información.
+document
+
+Poner un punto inmediatamente después del nombre del objeto. (En algunos programas de desarrollo web, te muestra una lista con todos los atributos y métodos que tiene el objeto en donde puedes buscar lo que necesitas).
+document**.**
+
+Llamar el atributo o método al qu quieres acceder.
+document.write();
+
+Si llamas a un método que recibe un parámetro, debes colocarlo entre los paréntesis.
+document.write("Este es el atributo que recibe como parámetro");
+
+Recuerda:
+
+Las únicas etiquetas que deben ir a la misma altura de la etiqueta html son head y body.
+
+window.location  devuelve la ruta de la página
+
+Para agregar soporte a tildes y letras especiales puedes usar <meta charset=“utf-8”> dentro de head
+
+Cuándo quieres depurar un programa puedes usar console.log para ver mensajes en la consola
